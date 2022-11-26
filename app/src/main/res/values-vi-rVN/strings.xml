@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">lebaonhi_dh51904155</string>
+    <string name="trangchu">Trang chủ</string>
+    <string name="quanlysinhvien">Quản lý sinh viên</string>
+    <string name="quanlykhoa">Quản lý khoa</string>
+    <string name="about">Thông tin về tôi</string>
+    <string name="dangnhap">Đăng nhập</string>
+    <string name="dangky">Đăng ký</string>
+    <string name="tentaikhoan">Tên đăng nhập</string>
+    <string name="matkhau">Mật khẩu</string>
+    <string name="dangnhapngay">Đăng nhập ngay</string>
+</resources>
