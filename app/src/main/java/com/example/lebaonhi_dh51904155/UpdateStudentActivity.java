@@ -101,9 +101,12 @@ public class UpdateStudentActivity extends AppCompatActivity {
         khoadao khoadao = new khoadao(this);
         khoas = khoadao.getAll();
         ArrayAdapter<String> classesArrayAdapter = new ArrayAdapter<String>(this, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item);
-        for (int i=0; i<khoas.size();i++){
-            classesArrayAdapter.add(khoas.get(i).getName());
-        }
+//        for (int i=0; i<khoas.size();i++){
+//            classesArrayAdapter.add(khoas.get(i).getName());
+//        }
+        khoas.forEach((item)->{
+            classesArrayAdapter.add(item.getName());
+        });
         khoa.setAdapter(classesArrayAdapter);
     }
     public void getthongtin(){

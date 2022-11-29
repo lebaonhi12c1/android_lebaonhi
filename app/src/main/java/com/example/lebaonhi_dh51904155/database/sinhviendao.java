@@ -59,6 +59,16 @@ public class sinhviendao {
         student sinhvien = new student(cursor.getInt(0),cursor.getString(1),cursor.getString(2),cursor.getString(4),cursor.getBlob(5),cursor.getInt(3));
         return sinhvien;
     }
+    public boolean getClassfromSinhvien(int idSinhvien){
+        Cursor cursor = db.rawQuery("select * from sinhvien where khoa = ?", new String[]{idSinhvien +""});
+        cursor.moveToFirst();
+        student sinhvien = new student(cursor.getInt(0),cursor.getString(1),cursor.getString(2),cursor.getString(4),cursor.getBlob(5),cursor.getInt(3));
+        if(sinhvien != null){
+            return true;
+        }else{
+            return false;
+        }
+    }
     public void getupdate(student cls){
         ContentValues contentValues = new ContentValues();
         contentValues.put("name",cls.getName());

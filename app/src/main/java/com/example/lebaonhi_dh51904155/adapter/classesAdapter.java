@@ -11,12 +11,15 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.lebaonhi_dh51904155.ProccessClassesActivity;
 import com.example.lebaonhi_dh51904155.R;
 import com.example.lebaonhi_dh51904155.UpdateClassesActivity;
 import com.example.lebaonhi_dh51904155.database.khoadao;
+import com.example.lebaonhi_dh51904155.database.sinhviendao;
 import com.example.lebaonhi_dh51904155.model.classes;
+import com.example.lebaonhi_dh51904155.model.student;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -77,11 +80,16 @@ public class classesAdapter extends BaseAdapter {
                 builder.setPositiveButton("Có", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface,int a) {
-
-                        dao.delete(category.getId());
-                        Intent intent = new Intent(context, ProccessClassesActivity.class);
-                        context.startActivity(intent);
-                        context.finish();
+                        sinhviendao sinhviendao = new sinhviendao(context);
+                        if(sinhviendao.getClassfromSinhvien(Integer.parseInt(id.getText().toString()))){
+                            Toast.makeText(context,"Classes had students !!!",Toast.LENGTH_SHORT).show();
+                        }
+                        else {
+                            dao.delete(category.getId());
+                            Intent intent = new Intent(context, ProccessClassesActivity.class);
+                            context.startActivity(intent);
+                            context.finish();
+                        }
                     }
                 });
                 builder.setNegativeButton("Không", new DialogInterface.OnClickListener() {
