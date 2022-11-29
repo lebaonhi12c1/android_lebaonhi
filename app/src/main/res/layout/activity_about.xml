@@ -23,12 +23,19 @@
             android:id="@+id/textView7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#673AB7"
+            android:background="@color/from"
             android:gravity="center"
+            android:padding="10dp"
             android:text="@string/about"
             android:textColor="#F3F1F1"
             android:textSize="34sp"
             android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="137dp"
+            app:srcCompat="@drawable/untitled_removebg_preview__1_" />
 
         <TextView
             android:layout_width="match_parent"
@@ -69,7 +76,7 @@
                 android:id="@+id/btn_call"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:background="#662FC8"
+                android:background="@color/from"
                 app:srcCompat="@android:drawable/stat_sys_phone_call" />
         </LinearLayout>
 

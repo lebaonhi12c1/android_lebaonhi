@@ -20,6 +20,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="265dp"
+            app:srcCompat="@drawable/untitled_removebg_preview__1_" />
+
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
@@ -28,7 +34,7 @@
             android:gravity="center"
             android:rotationX="4"
             android:text="@string/dangnhap"
-            android:textColor="#673AB7"
+            android:textColor="@color/to"
             android:textSize="30sp"
             android:textStyle="bold" />
 
@@ -53,7 +59,10 @@
         <Button
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/dangnhapngay" />
+            android:layout_height="70dp"
+            android:backgroundTint="@color/from"
+            android:text="@string/dangnhapngay"
+            android:textSize="20sp"
+            app:cornerRadius="40dp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

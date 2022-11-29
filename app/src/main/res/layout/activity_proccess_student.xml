@@ -12,8 +12,9 @@
         android:id="@+id/textView22"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#673AB7"
+        android:background="@color/from"
         android:gravity="center"
+        android:padding="10dp"
         android:text="STUDENT LIST"
         android:textColor="#F3ECEC"
         android:textSize="34sp"
@@ -22,11 +23,13 @@
     <ListView
         android:id="@+id/lvStudent"
         android:layout_width="match_parent"
-        android:layout_height="599dp" />
+        android:layout_height="517dp" />
 
     <Button
         android:id="@+id/btn_add_student"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="add student" />
+        android:text="add student"
+        android:textSize="20sp"
+        app:cornerRadius="40dp" />
 </LinearLayout>

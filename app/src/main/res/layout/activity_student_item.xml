@@ -98,15 +98,13 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
                     android:layout_weight="1"
-                    android:gravity="left"
-                    android:text="TextView"
-                    android:textAlignment="textStart" />
+                    android:text="TextView"></TextView>
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/gra"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="99dp"
                 android:gravity="center|left"
                 android:orientation="vertical">
 
@@ -115,20 +113,24 @@
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="update" />
+                    android:text="update"
+                    android:textSize="12sp" />
 
                 <Button
                     android:id="@+id/btn_remove_sinhvien"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="remove" />
+                    android:text="remove"
+                    android:textSize="12sp" />
 
                 <Button
                     android:id="@+id/btn_info_details"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:text="infor" />
+                    android:layout_weight="1"
+                    android:text="infor"
+                    android:textSize="12sp" />
             </LinearLayout>
 
         </LinearLayout>

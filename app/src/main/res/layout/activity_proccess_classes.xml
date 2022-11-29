@@ -25,8 +25,9 @@
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#673AB7"
+            android:background="@color/from"
             android:gravity="center"
+            android:padding="10dp"
             android:text="CLASSES LIST"
             android:textColor="#E4E4E4"
             android:textSize="30dp"
@@ -35,13 +36,15 @@
         <ListView
             android:id="@+id/lvClasses"
             android:layout_width="match_parent"
-            android:layout_height="586dp" />
+            android:layout_height="529dp" />
 
         <Button
             android:id="@+id/btn_add_classes"
             android:layout_width="match_parent"
-            android:layout_height="55dp"
+            android:layout_height="match_parent"
             android:background="#673AB7"
-            android:text="add new classes" />
+            android:text="add new classes"
+            android:textSize="20sp"
+            app:cornerRadius="40dp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

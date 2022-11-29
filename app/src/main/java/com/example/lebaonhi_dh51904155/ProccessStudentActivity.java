@@ -1,9 +1,12 @@
 package com.example.lebaonhi_dh51904155;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -51,5 +54,38 @@ public class ProccessStudentActivity extends AppCompatActivity {
         sinhviens = dao.getAll();
         studentAdapter = new studentAdapter(this, sinhviens);
         lvsinhvien.setAdapter(studentAdapter);
+    }
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.option_menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.MenuAbout:
+                Intent intent = new Intent(ProccessStudentActivity.this, ProccessStudentActivity.class);
+                startActivity(intent);
+                finish();
+                break;
+            case R.id.MenuExit:
+                finishAffinity();
+                break;
+            case R.id.MenuUsa:
+                Util.daNgonNgu(ProccessStudentActivity.this,"en");
+                Intent intent1 = new Intent(ProccessStudentActivity.this,ProccessStudentActivity.class);
+                startActivity(intent1);
+                finish();
+                break;
+            case R.id.MenuVN:
+                Util.daNgonNgu(ProccessStudentActivity.this,"vi");
+                Intent intent2 = new Intent(ProccessStudentActivity.this,ProccessStudentActivity.class);
+                startActivity(intent2);
+                finish();
+                break;
+            default:
+
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }

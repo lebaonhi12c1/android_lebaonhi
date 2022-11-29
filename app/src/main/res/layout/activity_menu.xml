@@ -21,36 +21,51 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="229dp"
+            app:srcCompat="@drawable/untitled_removebg_preview__1_" />
+
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="100dp"
+            android:layout_marginBottom="40dp"
             android:gravity="center"
             android:text="@string/trangchu"
-            android:textColor="#673AB7"
-            android:textSize="30sp"
+            android:textColor="@color/to"
+            android:textSize="34sp"
             android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_class_list"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:layout_marginBottom="20dp"
-            android:text="@string/quanlykhoa" />
+            android:backgroundTint="@color/from"
+            android:text="@string/quanlykhoa"
+            android:textSize="20sp"
+            app:cornerRadius="40dp" />
 
         <Button
             android:id="@+id/btn_student_list"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:layout_marginBottom="20dp"
-            android:text="@string/quanlysinhvien" />
+            android:backgroundTint="@color/from"
+            android:text="@string/quanlysinhvien"
+            android:textSize="20sp"
+            app:cornerRadius="40dp" />
 
         <Button
             android:id="@+id/btn_about"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:layout_marginBottom="20dp"
-            android:text="@string/about" />
+            android:backgroundTint="@color/from"
+            android:text="@string/about"
+            android:textSize="20sp"
+            app:cornerRadius="40dp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
