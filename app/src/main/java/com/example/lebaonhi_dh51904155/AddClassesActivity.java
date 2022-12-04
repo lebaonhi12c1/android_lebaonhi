@@ -47,7 +47,7 @@ public class AddClassesActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.MenuAbout:
-                Intent intent = new Intent(AddClassesActivity.this, AddClassesActivity.class);
+                Intent intent = new Intent(AddClassesActivity.this, AboutActivity.class);
                 startActivity(intent);
                 finish();
                 break;

@@ -59,7 +59,7 @@
                 android:layout_width="20dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Name"
+                android:text="@string/ten"
                 android:textSize="20sp" />
 
             <TextView
@@ -82,7 +82,7 @@
                 android:layout_width="20dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Classes"
+                android:text="@string/khoa"
                 android:textSize="20sp" />
 
             <TextView
@@ -130,7 +130,7 @@
                 android:layout_width="20dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Phone"
+                android:text="@string/sdt"
                 android:textSize="20sp" />
 
             <TextView
@@ -147,7 +147,7 @@
             android:id="@+id/btn_update_info"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="update"
+            android:text="@string/nutcapnhat"
             android:textSize="20sp"
             app:cornerRadius="40dp" />
     </LinearLayout>

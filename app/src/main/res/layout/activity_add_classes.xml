@@ -25,20 +25,14 @@
             android:background="@color/from"
             android:gravity="center"
             android:padding="10dp"
-            android:text="ADD NEW CLASSES"
+            android:text="@string/nutadd"
             android:textColor="#FFFFFF"
             android:textSize="30dp"
             android:textStyle="bold" />
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="match_parent"
-            android:layout_height="228dp"
-            app:srcCompat="@drawable/untitled_removebg_preview__1_" />
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="330dp"
+            android:layout_height="474dp"
             android:gravity="center"
             android:orientation="horizontal">
 
@@ -47,7 +41,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Classes name"
+                android:text="@string/ten"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -57,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:hint="Your classes name"
+                android:hint="@string/ten"
                 android:inputType="textPersonName" />
         </LinearLayout>
 
@@ -65,7 +59,7 @@
             android:id="@+id/btn_save_classes"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="SAVE"
+            android:text="@string/nutluu"
             android:textSize="20sp"
             app:cornerRadius="40dp" />
     </LinearLayout>

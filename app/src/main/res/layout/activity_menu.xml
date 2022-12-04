@@ -21,12 +21,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="match_parent"
-            android:layout_height="229dp"
-            app:srcCompat="@drawable/untitled_removebg_preview__1_" />
-
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
@@ -34,7 +28,7 @@
             android:layout_marginBottom="40dp"
             android:gravity="center"
             android:text="@string/trangchu"
-            android:textColor="@color/to"
+            android:textColor="@color/from"
             android:textSize="34sp"
             android:textStyle="bold" />
 

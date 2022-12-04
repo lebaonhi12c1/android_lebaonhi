@@ -23,7 +23,7 @@
             android:background="@color/from"
             android:gravity="center"
             android:padding="10dp"
-            android:text="ADD STUDENT"
+            android:text="@string/nutadd"
             android:textColor="#F3EFEF"
             android:textSize="34sp"
             android:textStyle="bold" />
@@ -63,7 +63,7 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Name"
+                android:text="@string/ten"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -73,7 +73,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:hint="Name"
+                android:hint="@string/ten"
                 android:inputType="textPersonName" />
         </LinearLayout>
 
@@ -111,7 +111,7 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Phone"
+                android:text="@string/sdt"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -121,7 +121,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:hint="Phone"
+                android:hint="@string/sdt"
                 android:inputType="textPersonName" />
 
         </LinearLayout>
@@ -136,7 +136,7 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Classes"
+                android:text="@string/khoa"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -171,13 +171,13 @@
                     android:id="@+id/take_photo_add"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="take photo" />
+                    android:text="@string/chuphinh" />
 
                 <Button
                     android:id="@+id/choose_add_photo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="choose photo" />
+                    android:text="@string/chonhinh" />
             </LinearLayout>
         </LinearLayout>
 
@@ -185,7 +185,7 @@
             android:id="@+id/btn_save_add_sinhvien"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="save"
+            android:text="@string/nutluu"
             android:textSize="20sp"
             app:cornerRadius="40dp" />
 

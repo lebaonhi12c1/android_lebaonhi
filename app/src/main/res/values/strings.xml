@@ -1,12 +1,22 @@
 <resources>
-    <string name="app_name">lebaonhi_dh51904155</string>
+    <string name="app_name">dothanhnam_dh51904020</string>
     <string name="trangchu">Home</string>
     <string name="quanlysinhvien">Student management</string>
-    <string name="quanlykhoa">Faculty management</string>
+    <string name="quanlykhoa">Class management</string>
     <string name="about">About</string>
     <string name="dangnhap">Login</string>
     <string name="dangky">Register</string>
     <string name="tentaikhoan">Username</string>
     <string name="matkhau">Password</string>
+    <string name="nutluu">Save</string>
+    <string name="nutadd">Create new</string>
+    <string name="nutcapnhat">Update</string>
+    <string name="ten">Name</string>
+    <string name="khoa">Class</string>
+    <string name="sdt">Phone</string>
     <string name="dangnhapngay">Login now</string>
+    <string name="chonhinh">Choose photo</string>
+    <string name="chuphinh">Take photo</string>
+    <string name="nutxoa">Remove</string>
+    <string name="thongtin">Info</string>
 </resources>

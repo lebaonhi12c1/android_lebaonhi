@@ -28,7 +28,7 @@
             android:background="@color/from"
             android:gravity="center"
             android:padding="10dp"
-            android:text="CLASSES LIST"
+            android:text="@string/quanlykhoa"
             android:textColor="#E4E4E4"
             android:textSize="30dp"
             android:textStyle="bold" />
@@ -43,7 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#673AB7"
-            android:text="add new classes"
+            android:text="@string/nutadd"
             android:textSize="20sp"
             app:cornerRadius="40dp" />
     </LinearLayout>

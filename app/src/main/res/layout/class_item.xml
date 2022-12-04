@@ -39,13 +39,13 @@
                 android:id="@+id/btn_update_item"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="update" />
+                android:text="@string/nutcapnhat" />
 
             <Button
                 android:id="@+id/btn_remove_item"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="remove" />
+                android:text="@string/nutxoa" />
         </LinearLayout>
 
     </LinearLayout>

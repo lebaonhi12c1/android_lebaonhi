@@ -20,21 +20,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="265dp"
-            app:srcCompat="@drawable/untitled_removebg_preview__1_" />
-
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autoText="false"
             android:gravity="center"
-            android:rotationX="4"
             android:text="@string/dangnhap"
-            android:textColor="@color/to"
+            android:textColor="@color/from"
             android:textSize="30sp"
             android:textStyle="bold" />
 

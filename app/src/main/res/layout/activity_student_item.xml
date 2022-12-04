@@ -67,7 +67,7 @@
                     android:layout_width="10dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Name" />
+                    android:text="@string/ten" />
 
                 <TextView
                     android:id="@+id/name_item"
@@ -90,7 +90,7 @@
                     android:layout_width="10dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Classes" />
+                    android:text="@string/khoa" />
 
                 <TextView
                     android:id="@+id/classes_item"
@@ -113,7 +113,7 @@
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="update"
+                    android:text="@string/nutcapnhat"
                     android:textSize="12sp" />
 
                 <Button
@@ -121,7 +121,7 @@
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="remove"
+                    android:text="@string/nutxoa"
                     android:textSize="12sp" />
 
                 <Button
@@ -129,7 +129,7 @@
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="infor"
+                    android:text="@string/thongtin"
                     android:textSize="12sp" />
             </LinearLayout>
 

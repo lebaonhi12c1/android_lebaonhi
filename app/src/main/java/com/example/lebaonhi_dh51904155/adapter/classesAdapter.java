@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.lebaonhi_dh51904155.AboutActivity;
 import com.example.lebaonhi_dh51904155.ProccessClassesActivity;
 import com.example.lebaonhi_dh51904155.R;
 import com.example.lebaonhi_dh51904155.UpdateClassesActivity;
@@ -74,22 +75,29 @@ public class classesAdapter extends BaseAdapter {
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
                 builder.setIcon(android.R.drawable.ic_delete);
                 khoadao dao = new khoadao(context);
-                classes category = list.get(i);
+               // classes category = list.get(i);
                 builder.setTitle("Xác nhận xóa");
                 builder.setMessage("Bạn có chắc muốn xóa danh mục này?");
                 builder.setPositiveButton("Có", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface,int a) {
                         sinhviendao sinhviendao = new sinhviendao(context);
-                        if(sinhviendao.getClassfromSinhvien(Integer.parseInt(id.getText().toString()))){
-                            Toast.makeText(context,"Classes had students !!!",Toast.LENGTH_SHORT).show();
+                        student sinhvien  = new student();
+                        for (int i=0; i<sinhviendao.getAll().size();i++){
+                            if (sinhviendao.getAll().get(i).getClasses() == classes.getId()){
+                                sinhvien = sinhviendao.getAll().get(i);
+                            }
                         }
-                        else {
-                            dao.delete(category.getId());
+                        if (sinhvien.getClasses() == classes.getId()){
+                            Toast.makeText(context,"co sinh vien "+ classes.getId()+"trong lop hoc",Toast.LENGTH_SHORT).show();
+                        }
+                        else{
+                            dao.delete(classes.getId());
                             Intent intent = new Intent(context, ProccessClassesActivity.class);
                             context.startActivity(intent);
                             context.finish();
                         }
+
                     }
                 });
                 builder.setNegativeButton("Không", new DialogInterface.OnClickListener() {

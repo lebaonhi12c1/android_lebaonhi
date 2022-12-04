@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(username.getText().toString().equals("lebaonhi") && password.getText().toString().equals("lebaonhi")){
+                if(username.getText().toString().equals("nam") && password.getText().toString().equals("nam")){
                     Intent intent  = new Intent(MainActivity.this,MenuActivity.class);
                     startActivity(intent);
                     Toast.makeText(getApplicationContext(),"Login Successfully", Toast.LENGTH_SHORT).show();
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.MenuAbout:
-                Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                Intent intent = new Intent(MainActivity.this, AboutActivity.class);
                 startActivity(intent);
                 finish();
                 break;

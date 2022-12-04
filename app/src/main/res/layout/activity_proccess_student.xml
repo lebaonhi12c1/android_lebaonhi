@@ -15,7 +15,7 @@
         android:background="@color/from"
         android:gravity="center"
         android:padding="10dp"
-        android:text="STUDENT LIST"
+        android:text="@string/quanlysinhvien"
         android:textColor="#F3ECEC"
         android:textSize="34sp"
         android:textStyle="bold" />
@@ -29,7 +29,7 @@
         android:id="@+id/btn_add_student"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="add student"
+        android:text="@string/nutadd"
         android:textSize="20sp"
         app:cornerRadius="40dp" />
 </LinearLayout>

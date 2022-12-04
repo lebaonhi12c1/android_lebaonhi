@@ -60,7 +60,7 @@ public class ProccessClassesActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.MenuAbout:
-                Intent intent = new Intent(ProccessClassesActivity.this, ProccessClassesActivity.class);
+                Intent intent = new Intent(ProccessClassesActivity.this, AboutActivity.class);
                 startActivity(intent);
                 finish();
                 break;

@@ -65,7 +65,7 @@ public class UpdateClassesActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.MenuAbout:
-                Intent intent = new Intent(UpdateClassesActivity.this, UpdateClassesActivity.class);
+                Intent intent = new Intent(UpdateClassesActivity.this, AboutActivity.class);
                 startActivity(intent);
                 finish();
                 break;
